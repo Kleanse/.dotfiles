@@ -179,7 +179,7 @@ procedure main()
 
 	// The # in this context is a unary operator meaning "length of"
 	for i <- 0 to #fibseq - 1 do
-		if i == #fibseq / 2 then
+		if i = #fibseq / 2 then
 			printf "-- Median: "
 			if #fibseq is odd then
 				printf "%d -- " fibseq[i]
