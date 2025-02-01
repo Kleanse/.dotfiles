@@ -175,7 +175,7 @@ procedure main()
 	end for
 	echo
 
-	fibseq <- { 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, }
+	fibseq <- [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ]
 
 	// The # in this context is a unary operator meaning "length of"
 	for i <- 0 to #fibseq - 1 do
