@@ -1,4 +1,4 @@
-*pseudocode_style.txt*	Last change: 2024 Aug 08
+*pseudocode_style.txt*	Last change: 2025 Feb 01
 
 			  Pseudocode style reference
 
@@ -14,7 +14,8 @@ encouraged.
    2.1 Statements		|pseudocode-statements|
    2.2 Expressions		|pseudocode-expressions|
    2.3 Control structures	|pseudocode-control|
-   2.4 Comments			|pseudocode-comments|
+   2.4 Data structures		|pseudocode-data|
+   2.5 Comments			|pseudocode-comments|
 3. Sample pseudocode	    |pseudocode-sample|
 
 ==============================================================================
@@ -148,7 +149,23 @@ Note: do-while does not use the `end` keyword. >
 		{statement}
 	end procedure
 
-2.4 Comments ~
+2.5 Data structures ~
+							 *pseudocode-data*
+Two data structures can be declared using special syntax: lists and
+dictionaries.
+
+Lists are declared using square brackets: >
+
+	list1 <- []  // empty list
+	foo <- ['b', 'a', 'r']
+	list2 <- list(26)  // list of size 26
+
+Dictionaries are declared using braces: >
+
+	dict1 <- {}  // empty dictionary
+	foo <- {b: 2, a: 1, r: 18}
+
+2.5 Comments ~
 							 *pseudocode-comments*
 Sometimes, even pseudocode cannot be perfectly transparent with its ideas.
 Comments are useful in these cases.
